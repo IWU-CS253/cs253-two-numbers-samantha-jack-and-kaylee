@@ -2,7 +2,13 @@
 {% block body %}
 <form action="/results" method = "post">
         <input autocomplete="off" autofocus name="number1" placeholder="first number" type="number" required>
-        <input autocomplete="off" autofocus name="number1" placeholder="second number" type="number" required>
+        <input autocomplete="off" autofocus name="number2" placeholder="second number" type="number" required>
+        <select name="operation" required>
+            <option value = "+">+</option>
+            <option value = "-">-</option>
+            <option value = "*">*</option>
+            <option value = "/">/</option>
+        </select>
         <button type="submit">Calculate</button>
 </form>
 
