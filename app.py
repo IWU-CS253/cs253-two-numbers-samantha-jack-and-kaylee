@@ -10,9 +10,9 @@ def index():  # put application's code here
 
 @app.route('/results', methods=["POST"])
 def result():
-    num1 = int(result.form.get("number1"))
-    num2 = int(result.form.get("number2"))
-    op = result.form.get("operation")
+    num1 = int(request.form.get("number1"))
+    num2 = int(request.form.get("number2"))
+    op = request.form.get("operation")
     end = "No operation selected"
     if op == "+":
         end = num1 + num2
@@ -25,7 +25,7 @@ def result():
             end = "Divide by 0 error"
         else:
             end = num1 / num2
-    return render_template("result.html", result=end)
+    return render_template("results.html", result=end)
 
 
 if __name__ == '__main__':
