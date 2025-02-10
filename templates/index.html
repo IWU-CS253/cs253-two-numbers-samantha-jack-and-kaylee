@@ -1,0 +1,10 @@
+{% extends layout.html %}
+{% block body %}
+<form action="/results" method = "post">
+        <input autocomplete="off" autofocus name="number1" placeholder="first number" type="number" required>
+        <input autocomplete="off" autofocus name="number1" placeholder="second number" type="number" required>
+        <button type="submit">Calculate</button>
+</form>
+
+{% endblock %}
+
