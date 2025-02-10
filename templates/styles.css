@@ -1,0 +1,15 @@
+input {
+    background-color: #FAF1C7;
+    text-color: #3D6558;
+    font-family: monospace;
+}
+
+button {
+    background-color: #3D6558;
+    text-color: #FAF1C7;
+    font-family: monospace;
+}
+
+body {
+    background-color: #F4A259;
+}
